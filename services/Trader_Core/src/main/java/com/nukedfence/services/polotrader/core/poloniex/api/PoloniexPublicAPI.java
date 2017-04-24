@@ -3,7 +3,7 @@ package com.nukedfence.services.polotrader.core.poloniex.api;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class PoloniexPublicAPI {
+public class PoloniexPublicAPI extends PoloniexAPI {
     public HashMap<String, HashMap<String, String>> returnTicker() {
         return new HashMap<>();
     }

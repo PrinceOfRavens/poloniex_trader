@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'test'
+apply pulgin: 'war'
+apply plugin: 'jar'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.apache.httpcomponents:httpclient:4.5.3"
+}
