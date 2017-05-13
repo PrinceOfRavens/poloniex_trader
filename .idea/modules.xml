@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/services/Trader_Core/Trader_Core.iml" filepath="$PROJECT_DIR$/services/Trader_Core/Trader_Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Trader_Core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Trader_Core_main.iml" group="Trader_Core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Trader_Core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Trader_Core_test.iml" group="Trader_Core" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/poloniex_trader.iml" filepath="$PROJECT_DIR$/.idea/modules/poloniex_trader.iml" />
     </modules>
   </component>

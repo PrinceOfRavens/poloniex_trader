@@ -9,7 +9,8 @@ public class PoloniexTradingAPI extends PoloniexAPI {
     private String apiKey;
     private String apiSecret;
 
-    public PoloniexTradingAPI(String apiKey, String apiSecret) {
+    public PoloniexTradingAPI(String url, String apiKey, String apiSecret) {
+        super(url);
         this.apiKey = apiKey;
         this.apiSecret = apiSecret;
     }

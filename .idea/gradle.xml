@@ -14,6 +14,16 @@
         </option>
         <option name="useAutoImport" value="true" />
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/services/Trader_Core" />
+        <option name="gradleHome" value="C:/gradle-3.5" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/services/Trader_Core" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
