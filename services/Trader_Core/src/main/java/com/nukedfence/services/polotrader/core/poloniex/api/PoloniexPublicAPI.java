@@ -50,39 +50,22 @@ public class PoloniexPublicAPI extends PoloniexAPI {
     }
 
     public JSONObject returnTicker() {
-        return getJsonRequest(getUrl() + "?command=returnTicker");
+        return getRequestedJSONObject("returnTicker");
     }
 
     public JSONObject returnTradingPairs() {
         return returnTicker();
     }
-
-    private JSONObject getJsonRequest(String url) {
-        try (CloseableHttpClient client = HttpClientBuilder.create().build()) {
-            HttpGet request = new HttpGet(url);
-            HttpResponse response = client.execute(request);
-
-            if (response.getStatusLine().getStatusCode() != 200) {
-                throw new IOException();
-            }
-
-            StringBuilder sb = new StringBuilder();
-            try (InputStreamReader isr = new InputStreamReader((response.getEntity().getContent())); BufferedReader br = new BufferedReader(isr)) {
-                String output;
-                while ((output = br.readLine()) != null) {
-                    sb.append(output);
-                }
-            }
-
-            return JSONObject.fromObject(sb.toString());
-        } catch (IOException e) {
-            return new JSONObject(true);
-        }
-    }
     
     
     private JSONObject getRequestedJSONObject(String command) {
         if (command != null && !command.isEmpty()) {
+            String data = getRequestedContent(getUrl() + "?command=" + command);
+            try {
+                return JSONObject.fromObject(data);
+            } catch (JSONException e) {
+                return new JSONObject(true);
+            }
         }
     }
     
