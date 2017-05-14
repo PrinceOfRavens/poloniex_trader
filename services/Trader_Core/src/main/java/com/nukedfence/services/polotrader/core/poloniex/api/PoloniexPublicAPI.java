@@ -79,4 +79,34 @@ public class PoloniexPublicAPI extends PoloniexAPI {
             return new JSONObject(true);
         }
     }
+    
+    
+    private JSONObject getRequestedJSONObject(String command) {
+        if (command != null && !command.isEmpty()) {
+        }
+    }
+    
+    
+    private String getRequestedContent(String url) {
+        try (CloseableHttpClient client = HttpClientBuilder.create().build()) {
+            HttpGet request = new HttpGet(url);
+            HttpResponse response = client.execute(request);
+            
+            if (response.getStatusLine().getStatusCode() != 200) {
+                throw new IOException();
+            }
+            
+            StringBuilder sb = new StringBuilder();
+            try (InputStreamReader isr = new InputStreamReader((response.getEntity().getContent())); BufferedReader br = new BufferedReader(isr)) {
+                String output;
+                while ((output = br.readLine()) != null) {
+                    sb.append(output);
+                }
+            }
+            
+            return sb.toString();
+        } catch (IOException e) {
+            return null;
+        }
+    }
 }
