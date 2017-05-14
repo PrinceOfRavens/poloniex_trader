@@ -1,6 +1,8 @@
 package com.nukedfence.services.polotrader.core.poloniex.api;
 
+import com.nukedfence.services.polotrader.core.poloniex.data.MarketTicker;
 import net.sf.json.JSONArray;
+import net.sf.json.JSONException;
 import net.sf.json.JSONObject;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -12,8 +14,7 @@ import org.apache.http.protocol.HTTP;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
 public class PoloniexPublicAPI extends PoloniexAPI {
 
@@ -49,12 +50,24 @@ public class PoloniexPublicAPI extends PoloniexAPI {
         return new HashMap<>();
     }
 
-    public JSONObject returnTicker() {
-        return getRequestedJSONObject("returnTicker");
+    public HashMap<String, MarketTicker> returnTicker() {
+        //return getRequestedJSONObject("returnTicker");
+
+        HashMap<String, MarketTicker> map = new HashMap<>();
+        JSONObject result = getRequestedJSONObject("returnTicker");
+        Iterator<?> keys = result.keys();
+        while ( keys.hasNext() ) {
+            String key = (String)keys.next();
+            if ( result.get(key) instanceof JSONObject ) {
+                JSONObject o = result.get(key);
+                MarketTicker mt = new MarketTicker(key, result.getDouble("last"))
+            }
+        }
+        return map;
     }
 
-    public JSONObject returnTradingPairs() {
-        return returnTicker();
+    public ArrayList<String> returnTradingPairs() {
+        return new ArrayList<>(returnTicker().keySet());
     }
     
     
@@ -67,6 +80,7 @@ public class PoloniexPublicAPI extends PoloniexAPI {
                 return new JSONObject(true);
             }
         }
+        return new JSONObject(true);
     }
     
     
