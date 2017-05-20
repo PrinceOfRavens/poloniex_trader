@@ -1,22 +1,26 @@
 package com.nukedfence.services.polotrader.core.poloniex.data;
 
+import net.sf.json.JSONObject;
+
 import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MarketTicker {
 
     private String currencyPair;
-    private BigDecimal last;
-    private BigDecimal lowestAsk;
-    private BigDecimal highestBid;
-    private BigDecimal percentChange;
-    private BigDecimal baseVolume;
-    private BigDecimal quoteVolume;
+    private double last;
+    private double lowestAsk;
+    private double highestBid;
+    private double percentChange;
+    private double baseVolume;
+    private double quoteVolume;
 
     public MarketTicker(String pair) {
         this.currencyPair = pair;
     }
 
-    public MarketTicker(String pair, BigDecimal last, BigDecimal lowestAsk, BigDecimal highestBid, BigDecimal percentChange, BigDecimal baseVolume, BigDecimal quoteVolume) {
+    public MarketTicker(String pair, double last, double lowestAsk, double highestBid, double percentChange, double baseVolume, double quoteVolume) {
         this(pair);
         this.last = last;
         this.lowestAsk = lowestAsk;
@@ -26,31 +30,41 @@ public class MarketTicker {
         this.quoteVolume = quoteVolume;
     }
 
+
+    public static final String LAST = "last";
+    public static final String LOWEST_ASK = "lowestAsk";
+    public static final String HIGHEST_BID = "highestBid";
+    public static final String PERCENT_CHANGE = "percentChange";
+    public static final String BASE_VOLUME = "baseVolume";
+    public static final String QUOTE_VOLUME = "quoteVolume";
+
+
+
     public String getCurrencyPair() {
         return currencyPair;
     }
 
-    public BigDecimal getLast() {
+    public double getLast() {
         return last;
     }
 
-    public BigDecimal getLowestAsk() {
+    public double getLowestAsk() {
         return lowestAsk;
     }
 
-    public BigDecimal getHighestBid() {
+    public double getHighestBid() {
         return highestBid;
     }
 
-    public BigDecimal getPercentChange() {
+    public double getPercentChange() {
         return percentChange;
     }
 
-    public BigDecimal getBaseVolume() {
+    public double getBaseVolume() {
         return baseVolume;
     }
 
-    public BigDecimal getQuoteVolume() {
+    public double getQuoteVolume() {
         return quoteVolume;
     }
 

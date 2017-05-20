@@ -1,19 +1,14 @@
 package com.nukedfence.services.polotrader.core.poloniex.api;
 
-import com.nukedfence.services.polotrader.core.poloniex.data.MarketTicker;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONException;
-import net.sf.json.JSONObject;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
+import net.sf.json.*;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.protocol.HTTP;
+import org.apache.http.util.EntityUtils;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.*;
 
 public class PoloniexPublicAPI extends PoloniexAPI {
@@ -22,88 +17,125 @@ public class PoloniexPublicAPI extends PoloniexAPI {
         super(url);
     }
 
-    /*public HashMap<String, HashMap<String, String>> returnTicker() {
-        return new HashMap<>();
-    }*/
-
-    public HashMap<String, HashMap<String, String>> return24Volume() {
-        return new HashMap<>();
-    }
-
-    public HashMap<String, Object> returnOrderBook() {
-        return new HashMap<>();
-    }
-
-    public ArrayList<HashMap<String, String>> returnTradeHistory() {
-        return new ArrayList<>();
-    }
-
-    public ArrayList<HashMap<String, String>> returnChartData() {
-        return new ArrayList<>();
-    }
-
-    public HashMap<String, HashMap<String, String>> returnCurrencies() {
-        return new HashMap<>();
-    }
-
-    public HashMap<String, HashMap<String, String>> returnLoanOrders() {
-        return new HashMap<>();
-    }
-
-    public HashMap<String, MarketTicker> returnTicker() {
-        //return getRequestedJSONObject("returnTicker");
-
+    /*public HashMap<String, MarketTicker> returnTicker() {
         HashMap<String, MarketTicker> map = new HashMap<>();
         JSONObject result = getRequestedJSONObject("returnTicker");
         Iterator<?> keys = result.keys();
         while ( keys.hasNext() ) {
             String key = (String)keys.next();
             if ( result.get(key) instanceof JSONObject ) {
-                JSONObject o = result.get(key);
-                MarketTicker mt = new MarketTicker(key, result.getDouble("last"))
+                JSONObject o = (JSONObject)result.get(key);
+                try {
+                    map.put(key, new MarketTicker(
+                            key,
+                            o.getDouble(MarketTicker.LAST),
+                            o.getDouble(MarketTicker.LOWEST_ASK),
+                            o.getDouble(MarketTicker.HIGHEST_BID),
+                            o.getDouble(MarketTicker.PERCENT_CHANGE),
+                            o.getDouble(MarketTicker.BASE_VOLUME),
+                            o.getDouble(MarketTicker.QUOTE_VOLUME)
+                    ));
+                } catch (JSONException e) {
+                    System.out.println("Invalid Market Ticker received.  [ Pair : " + key + " ]");
+                }
             }
         }
         return map;
+    }*/
+
+    /*public ArrayList<String> returnTradingPairs() {
+        ArrayList<String> pairs = new ArrayList<>();
+        JSONObject result = getRequestedJSONObject("returnTicker");
+        Iterator<?> keys = result.keys();
+        while ( keys.hasNext() ) {
+            String key = (String)keys.next();
+            pairs.add(key);
+        }
+        return pairs;
+    }*/
+
+    public JSONObject returnTicker() {
+        return getRequestedJSONObject("returnTicker");
     }
 
-    public ArrayList<String> returnTradingPairs() {
-        return new ArrayList<>(returnTicker().keySet());
+    public JSONObject return24Volume() {
+        return getRequestedJSONObject("return24hVolume");
     }
-    
-    
-    private JSONObject getRequestedJSONObject(String command) {
-        if (command != null && !command.isEmpty()) {
-            String data = getRequestedContent(getUrl() + "?command=" + command);
-            try {
-                return JSONObject.fromObject(data);
-            } catch (JSONException e) {
-                return new JSONObject(true);
-            }
-        }
-        return new JSONObject(true);
+
+    public JSONObject returnOrderBook() {
+        return returnOrderBook("all");
     }
-    
-    
-    private String getRequestedContent(String url) {
+
+    public JSONObject returnOrderBook(String currencyPair) {
+        return getRequestedJSONObject("returnOrderBook", new HashMap<String, String>(){{put("currencyPair", currencyPair);}});
+    }
+
+    public JSONArray returnTradeHistory(String currencyPair) {
+        return returnTradeHistory(currencyPair, null, null);
+    }
+
+    public JSONArray returnTradeHistory(String currencyPair, Long start) {
+        return returnTradeHistory(currencyPair, start, null);
+    }
+
+    public JSONArray returnTradeHistory(String currencyPair, Long start, Long end) {
+        return getRequestedJSONArray("returnTradeHistory", new HashMap<String, String>(){{
+            put("currencyPair", currencyPair);
+            put("start", (start != null) ? start.toString() : null);
+            put("end", (end != null) ? end.toString() : null);
+        }});
+    }
+
+    public JSONArray returnChartData(String currencyPair, long period) {
+        return returnChartData(currencyPair, period, null, null);
+    }
+
+    public JSONArray returnChartData(String currencyPair, long period, Long start) {
+        return returnChartData(currencyPair, period, start, null);
+    }
+
+    public JSONArray returnChartData(String currencyPair, long period, Long start, Long end) {
+        return getRequestedJSONArray("returnChartData", new HashMap<String, String>(){{
+            put("currencyPair", currencyPair);
+            put("period", String.valueOf(period));
+            put("start", (start != null) ? start.toString() : null);
+            put("end", (end != null) ? end.toString() : null);
+        }});
+    }
+
+    public JSONObject returnCurrencies() {
+        return getRequestedJSONObject("returnCurrencies");
+    }
+
+    public JSONObject returnLoanOrders(String currency) {
+        return getRequestedJSONObject("returnLoanOrders", new HashMap<String, String>(){{put("currency", currency);}});
+    }
+
+
+
+    @Override
+    protected String getRequestedContent(String url, Map<String, String> params) {
         try (CloseableHttpClient client = HttpClientBuilder.create().build()) {
-            HttpGet request = new HttpGet(url);
-            HttpResponse response = client.execute(request);
-            
-            if (response.getStatusLine().getStatusCode() != 200) {
-                throw new IOException();
-            }
-            
-            StringBuilder sb = new StringBuilder();
-            try (InputStreamReader isr = new InputStreamReader((response.getEntity().getContent())); BufferedReader br = new BufferedReader(isr)) {
-                String output;
-                while ((output = br.readLine()) != null) {
-                    sb.append(output);
+            System.out.println("Requesting content for: " + poloniexPublicUrlBuilder(url, params));
+            HttpGet request = new HttpGet(poloniexPublicUrlBuilder(url, params));
+
+            try (CloseableHttpResponse response = client.execute(request)) {
+                if (response.getStatusLine().getStatusCode() != 200) {
+                    throw new IOException();
                 }
+                HttpEntity responseEntity = response.getEntity();
+                return EntityUtils.toString(responseEntity);
             }
-            
-            return sb.toString();
         } catch (IOException e) {
             return null;
         }
+    }
+
+    private String poloniexPublicUrlBuilder(String url, Map<String, String> params) {
+        StringBuilder sb = new StringBuilder(url);
+        if ( params != null ) {
+            sb.append("?").append(getQueryParamString(params));
+        }
+        return sb.toString();
     }
 }
