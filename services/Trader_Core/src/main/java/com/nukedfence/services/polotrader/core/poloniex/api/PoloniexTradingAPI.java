@@ -111,11 +111,11 @@ public class PoloniexTradingAPI extends PoloniexAPI {
         POST_ONLY
     }
 
-    public JSONObject buy(String currencyPair, double rate, long amount) {
+    public JSONObject buy(String currencyPair, double rate, double amount) {
         return buy(currencyPair, rate, amount, null);
     }
 
-    public JSONObject buy(String currencyPair, double rate, long amount, OrderType order) {
+    public JSONObject buy(String currencyPair, double rate, double amount, OrderType order) {
         return getRequestedJSONObject("buy", new HashMap<String, String>(){{
             put("currencyPair", currencyPair);
             put("rate", String.valueOf(rate));
@@ -134,11 +134,11 @@ public class PoloniexTradingAPI extends PoloniexAPI {
         }});
     }
 
-    public JSONObject sell(String currencyPair, double rate, long amount) {
+    public JSONObject sell(String currencyPair, double rate, double amount) {
         return sell(currencyPair, rate, amount, null);
     }
 
-    public JSONObject sell(String currencyPair, double rate, long amount, OrderType orderType) {
+    public JSONObject sell(String currencyPair, double rate, double amount, OrderType orderType) {
         return getRequestedJSONObject("buy", new HashMap<String, String>(){{
             put("currencyPair", currencyPair);
             put("rate", String.valueOf(rate));
@@ -167,7 +167,7 @@ public class PoloniexTradingAPI extends PoloniexAPI {
         return moveOrder(orderNumber, rate, null, null);
     }
 
-    public JSONObject moveOrder(long orderNumber, double rate, Long amount) {
+    public JSONObject moveOrder(long orderNumber, double rate, Double amount) {
         return moveOrder(orderNumber, rate, amount, null);
     }
 
@@ -175,7 +175,7 @@ public class PoloniexTradingAPI extends PoloniexAPI {
         return moveOrder(orderNumber, rate, null, orderType);
     }
 
-    public JSONObject moveOrder(long orderNumber, double rate, Long amount, OrderType orderType) {
+    public JSONObject moveOrder(long orderNumber, double rate, Double amount, OrderType orderType) {
         return getRequestedJSONObject("moveOrder", new HashMap<String, String>(){{
             put("orderNumber", String.valueOf(orderNumber));
             put("rate", String.valueOf(rate));

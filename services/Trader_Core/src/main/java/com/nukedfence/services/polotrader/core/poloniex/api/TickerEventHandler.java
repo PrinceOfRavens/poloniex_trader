@@ -3,5 +3,5 @@ package com.nukedfence.services.polotrader.core.poloniex.api;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 
 public interface TickerEventHandler {
-    public void handle(ArrayNode a);
+    public void handleTickerEvent(ArrayNode a);
 }

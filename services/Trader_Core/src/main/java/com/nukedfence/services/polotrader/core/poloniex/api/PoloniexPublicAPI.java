@@ -116,7 +116,7 @@ public class PoloniexPublicAPI extends PoloniexAPI {
     @Override
     protected String getRequestedContent(String url, Map<String, String> params) {
         try (CloseableHttpClient client = HttpClientBuilder.create().build()) {
-            System.out.println("Requesting content for: " + poloniexPublicUrlBuilder(url, params));
+            //System.out.println("Requesting content for: " + poloniexPublicUrlBuilder(url, params));
             HttpGet request = new HttpGet(poloniexPublicUrlBuilder(url, params));
 
             try (CloseableHttpResponse response = client.execute(request)) {

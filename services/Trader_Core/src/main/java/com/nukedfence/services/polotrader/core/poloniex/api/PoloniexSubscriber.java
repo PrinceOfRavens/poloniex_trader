@@ -51,7 +51,7 @@ public class PoloniexSubscriber {
                         (s) -> {
                             System.out.println("Recieved ticker update for " + s.arguments().get(0) + ".");
                             for (TickerEventHandler t : getTickerEventHandlers()) {
-                                t.handle(s.arguments());
+                                t.handleTickerEvent(s.arguments());
                             }
                         },
                         (e) -> {
