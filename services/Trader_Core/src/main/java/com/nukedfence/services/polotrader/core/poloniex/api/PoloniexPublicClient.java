@@ -1,14 +1,10 @@
 package com.nukedfence.services.polotrader.core.poloniex.api;
 
-import net.sf.json.JSON;
+import com.nukedfence.services.polotrader.core.poloniex.data.MarketTicker;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
-import java.io.Closeable;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
+import java.util.*;
 
 public class PoloniexPublicClient extends PoloniexAPIClient {
 
@@ -21,6 +17,18 @@ public class PoloniexPublicClient extends PoloniexAPIClient {
 
     public JSONObject returnTicker() {
         return (JSONObject) requestData(() -> publicAPI.returnTicker());
+    }
+
+    public Map<String, MarketTicker> getMarketTickers() {
+        JSONObject tickers = returnTicker();
+        Map<String, MarketTicker> marketTickers = new HashMap<>();
+        Iterator<?> keys = tickers.keys();
+        while (keys.hasNext()) {
+            String pair = (String) keys.next();
+            MarketTicker mt = MarketTicker.getInstance(pair, tickers.getJSONObject(pair));
+            if (mt != null) marketTickers.put(pair, mt);
+        }
+        return marketTickers;
     }
 
     public List<String> getTradingPairs() {

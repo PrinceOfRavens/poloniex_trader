@@ -75,7 +75,11 @@ public class PoloniexExchange implements Closeable {
 
     private void initializeMarkets() {
         List<String> tradingPairs = poloniexPublicClient.getTradingPairs();
-
+        //Map<String, MarketTicker> tickers = poloniexPublicClient.getMarketTickers();
+        for (String tradingPair : tradingPairs) {
+            Market m = new Market(this, tradingPair);
+            getMarkets().put(tradingPair, m);
+        }
     }
 
     @Override

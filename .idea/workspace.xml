@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6daf310c-4fee-469a-884d-158767a52410" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/ChartData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Currency.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Market.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexAPIClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexAPIRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexAPIRequestExecutor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexExchange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexTradingClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicAPI.java" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexSubscriber.java" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexSubscriber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexTradingAPI.java" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexTradingAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Startup.java" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Startup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/TickerEventHandler.java" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/TickerEventHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/TickerEventManager.java" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/TickerEventManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexExchange.java" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexExchange.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicClient.java" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/data/MarketTicker.java" afterPath="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/data/MarketTicker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -116,9 +104,21 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50479746">
+    <splitter split-orientation="horizontal" split-proportion="0.4989339">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="MarketTicker.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/data/MarketTicker.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="148">
+                  <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="PoloniexSubscriber.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexSubscriber.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -134,14 +134,14 @@
           <file leaf-file-name="PoloniexExchange.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexExchange.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+                <state relative-caret-position="304">
+                  <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1727#1728#0" expanded="true" />
                     <element signature="e#1780#1781#0" expanded="true" />
-                    <element signature="e#2573#2574#0" expanded="true" />
-                    <element signature="e#2617#2618#0" expanded="true" />
+                    <element signature="e#2819#2820#0" expanded="true" />
+                    <element signature="e#2863#2864#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -150,8 +150,8 @@
           <file leaf-file-name="Currency.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Currency.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="644">
-                  <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+                <state relative-caret-position="441">
+                  <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#588#589#0" expanded="true" />
@@ -163,26 +163,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Market.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Market.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="454">
-                  <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#1067#1068#0" expanded="true" />
-                    <element signature="e#1102#1103#0" expanded="true" />
-                    <element signature="e#1144#1145#0" expanded="true" />
-                    <element signature="e#1180#1181#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="ChartData.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/ChartData.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
                   <folding>
                     <element signature="e#262#263#0" expanded="true" />
                     <element signature="e#306#307#0" expanded="true" />
@@ -195,16 +180,6 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MarketTicker.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/data/MarketTicker.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="PoloniexTradingClient.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexTradingClient.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -220,7 +195,7 @@
           <file leaf-file-name="PoloniexPublicAPI.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicAPI.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
+                <state relative-caret-position="732">
                   <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -231,28 +206,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PoloniexPublicClient.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PoloniexPublicClient.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicClient.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="217">
-                  <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+                <state relative-caret-position="476">
+                  <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#498#499#0" expanded="true" />
-                    <element signature="e#521#522#0" expanded="true" />
-                    <element signature="e#3498#3499#0" expanded="true" />
-                    <element signature="e#3581#3582#0" expanded="true" />
+                    <element signature="e#416#417#0" expanded="true" />
+                    <element signature="e#439#440#0" expanded="true" />
+                    <element signature="e#3905#3906#0" expanded="true" />
+                    <element signature="e#3988#3989#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
+          <file leaf-file-name="Market.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Market.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="511">
-                  <caret line="2420" column="23" lean-forward="true" selection-start-line="2420" selection-start-column="23" selection-end-line="2420" selection-end-column="23" />
-                  <folding />
+                <state relative-caret-position="454">
+                  <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#1144#1145#0" expanded="true" />
+                    <element signature="e#1180#1181#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -274,7 +252,7 @@
           <file leaf-file-name="Startup.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Startup.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="321">
+                <state relative-caret-position="1733">
                   <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -786,7 +764,6 @@
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Ticker.java" />
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/CurrencyTicker.java" />
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/data/CurrencyTicker.java" />
-        <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/data/MarketTicker.java" />
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexAPI.java" />
         <option value="$PROJECT_DIR$/services/Trader_Core/build.gradle" />
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexSubscriber.java" />
@@ -801,8 +778,9 @@
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexAPIRequestExecutor.java" />
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Startup.java" />
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Currency.java" />
-        <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicClient.java" />
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Market.java" />
+        <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicClient.java" />
+        <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/data/MarketTicker.java" />
         <option value="$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexExchange.java" />
       </list>
     </option>
@@ -1267,6 +1245,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1289,7 +1268,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1307,15 +1286,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexExchange.java</url>
-          <line>78</line>
+          <line>79</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Market.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="14" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1324,20 +1309,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="136" column="13" lean-forward="false" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ws.wamp.jawampa/jawampa-core/0.5.0/3da9caabe0cc086ebb7936e51120fa66957ff862/jawampa-core-0.5.0-sources.jar!/ws/wamp/jawampa/WampError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.8/ac691565363bc49547d3907ad6d9ddade821b8f0/rxjava-1.0.8-sources.jar!/rx/Subscription.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1553,17 +1524,9 @@
         <state relative-caret-position="374">
           <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="16" />
           <folding>
-            <element signature="e#2962#2963#0" expanded="true" />
-            <element signature="e#3023#3024#0" expanded="true" />
+            <element signature="e#2962#2963#0" expanded="false" />
+            <element signature="e#3023#3024#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/data/MarketTicker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1588,12 +1551,12 @@
         <state relative-caret-position="340">
           <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="false" />
+            <element signature="e#261#262#0" expanded="false" />
+            <element signature="e#329#330#0" expanded="false" />
+            <element signature="e#381#382#0" expanded="false" />
+            <element signature="e#417#418#0" expanded="false" />
+            <element signature="e#476#477#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1603,17 +1566,6 @@
         <state relative-caret-position="302">
           <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/ChartData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1676,38 +1628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.json-lib/json-lib/2.4/136743e0d12df4e785e62b48618cee169b2ae546/json-lib-2.4-jdk15.jar!/net/sf/json/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="1465" column="34" lean-forward="false" selection-start-line="1465" selection-start-column="34" selection-end-line="1465" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Startup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Currency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexTradingClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1720,12 +1640,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="732">
           <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2129#2130#0" expanded="true" />
             <element signature="e#2190#2191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Currency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1738,16 +1672,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="536" column="25" lean-forward="false" selection-start-line="536" selection-start-column="25" selection-end-line="536" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="613" column="22" lean-forward="false" selection-start-line="613" selection-start-column="22" selection-end-line="613" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.json-lib/json-lib/2.4/136743e0d12df4e785e62b48618cee169b2ae546/json-lib-2.4-jdk15.jar!/net/sf/json/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="1511" column="22" lean-forward="false" selection-start-line="1511" selection-start-column="22" selection-end-line="1511" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexPublicClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
+        <state relative-caret-position="476">
+          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#3498#3499#0" expanded="true" />
-            <element signature="e#3581#3582#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#3905#3906#0" expanded="true" />
+            <element signature="e#3988#3989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/ChartData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/data/MarketTicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="36" column="52" lean-forward="false" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Startup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1733">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
+            <element signature="e#1780#1781#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2863#2864#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1755,26 +1758,10 @@
     <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/Market.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
-          <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1102#1103#0" expanded="true" />
             <element signature="e#1144#1145#0" expanded="true" />
             <element signature="e#1180#1181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/Trader_Core/src/main/java/com/nukedfence/services/polotrader/core/poloniex/api/PoloniexExchange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#1780#1781#0" expanded="true" />
-            <element signature="e#2573#2574#0" expanded="true" />
-            <element signature="e#2617#2618#0" expanded="true" />
           </folding>
         </state>
       </provider>
